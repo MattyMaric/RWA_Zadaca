@@ -1,0 +1,97 @@
+2.1 Pristup resursima
+
+    a)	Pokreće li vaš preglednik HTTP verziju 1.0 ili 1.1? 
+        HTTP 1.1
+        Na Chrome-u sam otvorio DevTools, otisao na Network tab te sam tu uocio u protocol tablici http/1.1 
+
+    b)	Koja je verzija HTTP-a poslužitelja pokrenuta kad pristupite npr sa sum.ba?
+        Takoder HTTP 1.1
+        Dosao sam do rezultata na isti nacin kao sa zadatkom pod a) iako su nastale blage poteskoce radi isteklog certifikata na sum.ba stranici
+
+    c)	Koje jezike (ako postoje) vaš preglednik pokazuje da može prihvatiti na poslužitelju?
+        Na stranici nema navedeno koji jezici se mogu prihvatiti na posluzitelju
+
+    d)	Koja je IP adresa vašeg računala? A koja je IP adresa sum.ba?
+        IP adresa mog racunala - 77.77.193.0
+        IP adresa sum.ba - 212.39.111.33
+        Koristio sam nslookup da bih dosao do rezultata
+
+    e)	Kada je HTML datoteka koju dohvaćate zadnji put modificirana na poslužitelju?
+        Last-Modified: Thu, 03 Dec 1992 08:37:20 GMT
+
+    f)	Koliko se bajtova sadržaja vraća u vaš preglednik?
+        Content-Length: 2217
+
+    g)	Koji softver/web poslužitelj  poslužje web stranicu na server,navedite odakle vidite?
+        Server: Apache - iscitano iz headera sa Reqbin stranice
+
+    h)	Koje jezike vaš web preglednik može prihvatiti?
+        Front-end jezici su:
+            HTTP
+            CSS
+            Javascipt
+        Back-End jezici su:
+            Php
+            Python
+            Java
+            SQL za baze podataka
+
+2.2 Pristup razlicitim resursima
+
+    1)	http://web-admin.sum.ba/api/storage/pravilnik_mobilnost_1552858671_80.pdf
+            Date: Sun, 19 Nov 2023 14:58:09 GMT
+            Server: Apache/2.4.29 (Ubuntu)
+            Cache-Control: no-cache, private
+            Transfer-Encoding: chunked
+            Content-Type: application/pdf
+
+        a)	kojem MIME formatu resursa se radi:
+            .pdf ; application/pdf
+        b)	kolika je veličina resursa (u byte-ima)
+            747880
+        c)	koja je verzija HTTP poslužitelja
+            HTTP/1.1
+
+
+    2)	https://eucenje.sum.ba/moodle/pluginfile.php/1/core_admin/logocompact/300x300/1698654623/Logo%20sumarum.png
+            Date: Sun, 19 Nov 2023 15:03:19 GMT
+            Content-Type: image/png
+            Content-Length: 15684
+            Connection: keep-alive
+            Set-Cookie: MoodleSession=d3mbleli03g0m0b52ee6eovi9d; path=/moodle/; secure; SameSite=None
+            Content-Disposition: inline; filename="Logo sumarum.png"
+            Cache-Control: public, max-age=5184000, no-transform
+            Expires: Thu, 18 Jan 2024 15:03:19 GMT
+            Pragma: 
+            Accept-Ranges: bytes
+            Last-Modified: Mon, 30 Oct 2023 08:30:25 GMT
+
+        a)	kojem MIME formatu resursa se radi:
+            .png ; image/png
+        b)	kolika je veličina resursa (u byte-ima)
+            15320
+        c)	koja je verzija HTTP poslužitelja
+            HTTP/1.1
+
+    3)	https://mirrors.edge.kernel.org/linuxmint/stable/10/sha256sum.txt
+            Server: nginx
+            Date: Sun, 19 Nov 2023 15:05:47 GMT
+            Content-Type: text/plain
+            Last-Modified: Mon, 14 Mar 2011 13:57:15 GMT
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            Vary: Accept-Encoding
+            X-Frame-Options: DENY
+            X-Content-Type-Options: nosniff
+            Content-Security-Policy: default-src https:
+            X-XSS-Protection: 1; mode=block
+            Strict-Transport-Security: max-age=15768001
+            Content-Encoding: gzip
+
+        a)	kojem MIME formatu resursa se radi:
+            .txt ; text/plain
+        b)	kolika je veličina resursa (u byte-ima)
+            1060
+        c)	koja je verzija HTTP poslužitelja
+            HTTP/1.1
+
