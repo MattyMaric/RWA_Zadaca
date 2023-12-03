@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JS osnove - 3. zadatak</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        for (let i = 1; i <= 1000; i++) {
+            let flag = true;
+
+            for (let j = 2; j < i - 1; j++) {
+                if (i % j === 0) {
+                    flag = false;
+                }
+            }
+
+            if (flag === true) {
+                console.log(i);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

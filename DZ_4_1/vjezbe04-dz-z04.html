@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JS osnove - 4. zadatak</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        polje = new Array(1, 2, 3, 4, 7, 8, 5, 6, 9, 55, 12, 4, 85);
+
+        //Duzina polja
+        document.write(polje.length);
+        document.write('<br>');
+
+        //Sortirano najveci ka najmanjem
+        document.write(polje.sort(function (a, b) { return a - b }));
+        document.write('<br>');
+
+        //Sortirano najmanji ka najvecem
+        document.write(polje.sort(function (a, b) { return b - a }));
+        document.write('<br>');
+
+        //Uklonjen zadnji clan iz sortiranog polja
+        document.write(polje.sort(function (a, b) { return b - a }).slice(0, -1));
+        document.write('<br>');
+
+        //Dodane vrijednosti 19 i 22 u polje
+        polje1 = polje.sort(function (a, b) { return b - a }).slice(0, -1);
+        polje1.push(19, 22)
+        document.write(polje1);
+        document.write('<br>');
+
+        //Spojena 2 polja u jedno polje_final
+        polje2 = ["Banana", "Orange", "Apple", "Mango"];
+        polje_final = polje.concat(polje2);
+        document.write(polje_final);
+
+    </script>
+</body>
+
+</html>
