@@ -15,20 +15,20 @@
         document.write(polje.length);
         document.write('<br>');
 
-        //Sortirano najveci ka najmanjem
-        document.write(polje.sort(function (a, b) { return a - b }));
-        document.write('<br>');
-
         //Sortirano najmanji ka najvecem
         document.write(polje.sort(function (a, b) { return b - a }));
         document.write('<br>');
 
+        //Sortirano najveci ka najmanjem
+        document.write(polje.sort(function (a, b) { return a - b }));
+        document.write('<br>');
+
         //Uklonjen zadnji clan iz sortiranog polja
-        document.write(polje.sort(function (a, b) { return b - a }).slice(0, -1));
+        document.write(polje.sort(function (a, b) { return a - b }).slice(0, -1));
         document.write('<br>');
 
         //Dodane vrijednosti 19 i 22 u polje
-        polje1 = polje.sort(function (a, b) { return b - a }).slice(0, -1);
+        polje1 = polje.sort(function (a, b) { return a - b }).slice(0, -1);
         polje1.push(19, 22)
         document.write(polje1);
         document.write('<br>');
