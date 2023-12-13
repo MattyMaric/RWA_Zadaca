@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JS i DOM - Zadatak 4</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+
+        function ocjenaAlert() {
+            var ocjena = document.getElementById("ocjena").value;
+
+            switch (parseInt(ocjena)) {
+
+                case 1:
+                    document.getElementById('upisOcjene').innerHTML += "1 - Nedovoljan\n"
+                    break;
+                case 2:
+                    document.getElementById('upisOcjene').innerHTML += "2 - Dovoljan<br>"
+                    break;
+                case 3:
+                    document.getElementById('upisOcjene').innerHTML += "3 - Dobar<br>"
+                    break;
+                case 4:
+                    document.getElementById('upisOcjene').innerHTML += "4 - Vrlo dobar<br>"
+                    break;
+                case 5:
+                    document.getElementById('upisOcjene').innerHTML += "5 - Odlican<br>"
+                    break;
+                default:
+                    document.getElementById('upisOcjene').innerHTML += "Pogresan unos!<br>"
+            }
+
+        }
+    </script>
+
+    <input type="text" id="ocjena" placeholder="Unesite ocjenu">
+    <button type="button" value="Submit" onclick="ocjenaAlert()">Accept</button>
+
+    <div>
+        <p id="upisOcjene">
+
+        </p>
+    </div>
+
+</body>
+
+</html>

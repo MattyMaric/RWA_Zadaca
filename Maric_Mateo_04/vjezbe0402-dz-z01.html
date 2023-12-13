@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>JS i DOM - Zadatak 1</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        let input = prompt("Unesite brojeve te ih razdvojite zarezom (,)");
+        let polje = input.split(",");
+
+        let aritSuma = 0;
+        let geomSuma = 1;
+
+        for (let i = 0; i < polje.length; i++) {
+
+            let number = parseInt(polje[i], 10);
+            aritSuma += number;
+        }
+
+        for (let j = 0; j < polje.length; j++) {
+            let number = parseInt(polje[j], 10);
+            geomSuma *= number;
+        }
+
+        let aritmetickaSredina = aritSuma / polje.length;
+        let geometrijskaSredina = Math.pow(geomSuma, 1 / polje.length);
+
+        document.write("Aritmeticka sredina niza je: " + aritmetickaSredina + "<br>");
+        document.write("Geometrijska sredina niza je: " + geometrijskaSredina);
+
+    </script>
+</body>
+
+</html>

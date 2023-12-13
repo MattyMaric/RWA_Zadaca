@@ -1,0 +1,29 @@
+<html>
+
+
+<head>
+
+    <title>JS i DOM - Zadatak 10</title>
+
+    <script language="javascript" type="text/javascript">
+        //ovdje odati javascript kod, ponoviti kreiranje i dodavanje čvorova
+        function dodajTekst() {
+            var noviTekst = document.createElement("p");
+
+            noviTekst.textContent = "Ovo je novi paragraf"
+
+            var dodaj = document.getElementById("thisLocation");
+
+            dodaj.appendChild(noviTekst);
+        }
+    </script>
+</head>
+
+<body>
+    <p><a href="#" onclick="dodajTekst()">Kliknite ovdje da dodate novi paragraf tekst</a></p>
+    <p id="thisLocation">Novi paragrafi teksta će se pojaviti ispod</p>
+    <p>Ovo je defaultn-ni prvi paragraf teksta</p>
+
+</body>
+
+</html>
